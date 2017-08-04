@@ -4,18 +4,19 @@ import Vue from 'vue'
 import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
 import App from './App'
-import BScroll from 'better-scroll'
 import { AjaxPlugin } from 'vux'
-import VueLazyload from 'vue-lazyload'
 
 import Home from '@/home/home.vue'
 import About from '@/about/about.vue'
 import Picture from '@/picture/picture.vue'
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
 
+Vue.use(MintUI)
 Vue.use(AjaxPlugin)
 Vue.use(VueRouter)
 
-Vue.use(VueLazyload)
+
 const routes = [
 {
     path: '/',
