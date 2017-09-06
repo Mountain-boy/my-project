@@ -9,8 +9,10 @@ import { AjaxPlugin } from 'vux'
 import Home from '@/home/home.vue'
 import About from '@/about/about.vue'
 import Picture from '@/picture/picture.vue'
+import Project from '@/project/project.vue'
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
+import 'animate.css/animate.css'
 
 Vue.use(MintUI)
 Vue.use(AjaxPlugin)
@@ -35,6 +37,10 @@ const routes = [
 {
     path: '/picture',
     component: Picture
+},
+{
+    path: '/project',
+    component: Project
 }
 ]
 

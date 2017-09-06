@@ -2,7 +2,7 @@
   <div class="head">
     <x-header>
       <span>{{text}}</span>
-      <x-icon slot="overwrite-left" type="navicon" size="35" style="fill:#fff;position:relative;top:-8px;left:-3px;"   @click="headMore"></x-icon>
+      <x-icon slot="overwrite-left" type="navicon" size="35" style="fill:#fff;position:relative;top:-8px;left:-3px;"   @touchend="headMore"></x-icon>
     </x-header>
     <head-more :isShowing='showMenus'></head-more>
   </div>
